@@ -8,7 +8,7 @@ fi
 
 # Install required packages
 apt-get update
-apt-get install -y python3-pip python3-tk
+apt-get install -y python3-pip python3-tk=3.10.6-7
 
 # Install Python dependencies
 pip3 install -r requirements.txt

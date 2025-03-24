@@ -10,6 +10,11 @@ A simple GUI autoclicker application that allows you to record and playback mous
 - System tray application with always-on-top window
 - Cross-platform support (Windows/Linux)
 
+## Requirements
+- Python 3.10 or higher
+- python3-tk 3.10.6-7
+- X11 display server (Wayland is not supported)
+
 ## Installation
 
 ### Linux
@@ -39,7 +44,7 @@ If you prefer to install dependencies manually:
 1. Install required system packages:
 ```bash
 sudo apt-get update
-sudo apt-get install python3-pip python3-tk
+sudo apt-get install -y python3-pip python3-tk=3.10.6-7
 ```
 
 2. Install Python dependencies:
@@ -77,12 +82,13 @@ pyinstaller autoclicker.spec
 ### Linux
 If the global shortcuts don't work:
 1. Make sure you're running X11 (not Wayland)
-2. Check if python3-tk is installed:
+2. Check if python3-tk is installed with the correct version:
 ```bash
-sudo apt-get install python3-tk
+sudo apt-get install -y python3-tk=3.10.6-7
 ```
 3. Verify you have necessary permissions for input devices
 
 ### Common Issues
 - If the application doesn't appear in the menu after installation, try logging out and back in
-- If keyboard shortcuts don't work, make sure no other application is using F8/F9 
+- If keyboard shortcuts don't work, make sure no other application is using F8/F9
+- If you get tkinter errors, make sure you have the correct python3-tk version installed 
