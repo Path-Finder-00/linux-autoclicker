@@ -1,0 +1,9 @@
+[Desktop Entry]
+Version=1.0
+Name=AutoClicker
+Comment=Record and playback mouse clicks
+Exec=/usr/local/bin/autoclicker
+Terminal=false
+Type=Application
+Categories=Utility;
+Keywords=mouse;click;automation; 
